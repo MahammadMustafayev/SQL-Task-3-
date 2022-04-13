@@ -68,9 +68,12 @@
 --SELECT * FROM Posts 
 --SELECT * FROM Comments 
 ----1--
---SELECT  COUNT(LikeCount) FROM Comments
+--SELECT  COUNT(Comments.Id) FROM Comments
+
+
 --2--
 --CREATE VIEW AllData
+--AS
 --SELECT * FROM Comments as c
 --JOIN Users as u
 --ON c.UserId=u.Id
@@ -78,6 +81,8 @@
 --ON c.PeopleId=p.Id
 --JOIN Posts as ps
 --ON c.PostId=ps.Id
+
+
 --3--
 --ALTER TRIGGER GetDeletedPostsDAta
 --ON Posts
